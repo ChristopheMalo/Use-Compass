@@ -2,6 +2,8 @@
 
 This project shows different tests with Compass.
 
+It's a technical test, i'm not using graphical stuff.
+
 I use SASS and Flexbox.
 
 I'm working on MAC OS X Lion (10.7).
