@@ -5,8 +5,11 @@
 // Define compass/framework constants
 //
 // @author: Christophe Malo
-// Variables - Declare variables before import
+// Variables
+// Best practices: set variables before import module
+// if module use these variables
 $darkColor: #000;
+$spaceUlLi: .5em;
 
 @import "compass/reset";
 @import "compass/css3";

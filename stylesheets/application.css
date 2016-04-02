@@ -14,7 +14,6 @@
  * Reset CSS
  * -------------------------
  */
-/* line 5, ../../../../../Users/cmalo/.rvm/gems/ruby-2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -33,127 +32,131 @@ time, mark, audio, video {
   border: 0;
   font: inherit;
   font-size: 100%;
-  vertical-align: baseline;
-}
+  vertical-align: baseline; }
 
-/* line 22, ../../../../../Users/cmalo/.rvm/gems/ruby-2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
-  line-height: 1;
-}
+  line-height: 1; }
 
-/* line 24, ../../../../../Users/cmalo/.rvm/gems/ruby-2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
-  list-style: none;
-}
+  list-style: none; }
 
-/* line 26, ../../../../../Users/cmalo/.rvm/gems/ruby-2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
-  border-spacing: 0;
-}
+  border-spacing: 0; }
 
-/* line 28, ../../../../../Users/cmalo/.rvm/gems/ruby-2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
-  vertical-align: middle;
-}
+  vertical-align: middle; }
 
-/* line 30, ../../../../../Users/cmalo/.rvm/gems/ruby-2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
-  quotes: none;
-}
-/* line 103, ../../../../../Users/cmalo/.rvm/gems/ruby-2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-q:before, q:after, blockquote:before, blockquote:after {
-  content: "";
-  content: none;
-}
+  quotes: none; }
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
 
-/* line 32, ../../../../../Users/cmalo/.rvm/gems/ruby-2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
-  border: none;
-}
+  border: none; }
 
-/* line 116, ../../../../../Users/cmalo/.rvm/gems/ruby-2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
-  display: block;
-}
+  display: block; }
 
 /**
  * -------------------------
  * Generique
  * -------------------------
  */
-/* line 27, ../sass/application.scss */
 body {
+  background-color: lightsteelblue;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  padding-top: 20px;
-}
+  margin: 30px;
+  border: 16px solid #EEE; }
+
+h1, h2 p, ul, li, p {
+  padding: 20px; }
 
 /**
  * -------------------------
- * Font
+ * Content with flexbox
  * -------------------------
  */
-/* line 37, ../sass/application.scss */
-h1 {
+#container header, #container footer {
+  -webkit-flex: 1 0 100%;
+  flex: 1 0 100%; }
+#container header {
+  background: #ccccff; }
+  #container header h1 {
+    padding-top: 30px; }
+  #container header nav ul {
+    padding: 0;
+    margin: -0.5em;
+    min-width: 100%;
+    text-align: center;
+    display: -webkit-flex;
+    display: flex; }
+  #container header nav li {
+    background: grey;
+    margin: 0.5em;
+    display: inline-block;
+    -webkit-flex: 1 1 30%;
+    flex: 1 1 30%; }
+#container h1 {
   font-size: 2em;
   font-weight: bold;
+  color: #000; }
+#container section {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex: 1 0 100%;
+  flex: 1 0 100%; }
+#container h2 {
+  -webkit-flex: 1 1 100%;
+  flex: 1 1 100%;
+  font-size: 1.5em;
+  font-weight: normal;
   color: #000;
-}
+  background-color: lightblue;
+  padding: 30px; }
+#container article {
+  -webkit-flex: 2 1 30em;
+  flex: 2 1 30em;
+  background-color: lavender; }
+#container aside {
+  -webkit-flex: 1 0 15em;
+  flex: 1 0 15em;
+  background: #ccccff; }
+#container #flexible {
+  padding: 0;
+  text-align: center;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  #container #flexible li {
+    background: #CCC;
+    min-width: 12em;
+    margin: 0.5em;
+    padding: 0.5em;
+    display: inline-block;
+    -webkit-flex: 1 0;
+    flex: 1 0; }
+#container footer {
+  background-color: lightsalmon; }
 
 /**
  * -------------------------
- * Global
+ * Specific content
  * -------------------------
  */
-/* line 47, ../sass/application.scss */
-#container {
-  border: 1px solid #000;
-  margin: 20px;
-  padding: 20px;
-}
-
-/**
- * -------------------------
- * Header
- * -------------------------
- */
-/**
- * -------------------------
- * Content
- * -------------------------
- */
-/* line 67, ../sass/application.scss */
-.exampleElementOfType address, .exampleElementOfType article, .exampleElementOfType aside, .exampleElementOfType blockquote, .exampleElementOfType center, .exampleElementOfType dir, .exampleElementOfType div, .exampleElementOfType dd, .exampleElementOfType details, .exampleElementOfType dl, .exampleElementOfType dt, .exampleElementOfType fieldset, .exampleElementOfType figcaption, .exampleElementOfType figure, .exampleElementOfType form, .exampleElementOfType footer, .exampleElementOfType frameset, .exampleElementOfType h1, .exampleElementOfType h2, .exampleElementOfType h3, .exampleElementOfType h4, .exampleElementOfType h5, .exampleElementOfType h6, .exampleElementOfType hr, .exampleElementOfType header, .exampleElementOfType hgroup, .exampleElementOfType isindex, .exampleElementOfType main, .exampleElementOfType menu, .exampleElementOfType nav, .exampleElementOfType noframes, .exampleElementOfType noscript, .exampleElementOfType ol, .exampleElementOfType p, .exampleElementOfType pre, .exampleElementOfType section, .exampleElementOfType summary, .exampleElementOfType ul {
-  border: 1px solid #777777;
-  margin: 1em 3em;
-}
-/* line 71, ../sass/application.scss */
-.exampleElementOfType a, .exampleElementOfType abbr, .exampleElementOfType acronym, .exampleElementOfType audio, .exampleElementOfType b, .exampleElementOfType basefont, .exampleElementOfType bdo, .exampleElementOfType big, .exampleElementOfType br, .exampleElementOfType canvas, .exampleElementOfType cite, .exampleElementOfType code, .exampleElementOfType command, .exampleElementOfType datalist, .exampleElementOfType dfn, .exampleElementOfType em, .exampleElementOfType embed, .exampleElementOfType font, .exampleElementOfType i, .exampleElementOfType img, .exampleElementOfType input, .exampleElementOfType keygen, .exampleElementOfType kbd, .exampleElementOfType label, .exampleElementOfType mark, .exampleElementOfType meter, .exampleElementOfType output, .exampleElementOfType progress, .exampleElementOfType q, .exampleElementOfType rp, .exampleElementOfType rt, .exampleElementOfType ruby, .exampleElementOfType s, .exampleElementOfType samp, .exampleElementOfType select, .exampleElementOfType small, .exampleElementOfType span, .exampleElementOfType strike, .exampleElementOfType strong, .exampleElementOfType sub, .exampleElementOfType sup, .exampleElementOfType textarea, .exampleElementOfType time, .exampleElementOfType tt, .exampleElementOfType u, .exampleElementOfType var, .exampleElementOfType video, .exampleElementOfType wbr {
-  color: #cc0000;
-}
-
-/**
- * -------------------------
- * Footer
- * -------------------------
- */
-/**
- * -------------------------
- * Some tests
- * -------------------------
- */
-/* line 91, ../sass/application.scss */
 .testRadiusBox {
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
-  border-radius: 10px;
-}
+  border-radius: 10px; }
 
-/* line 96, ../sass/application.scss */
 .box1 {
-  border: 10px solid red;
-  height: 250px;
-  width: 250px;
-}
+  border: 10px solid #000;
+  height: 200px;
+  width: 200px;
+  margin: 10%; }

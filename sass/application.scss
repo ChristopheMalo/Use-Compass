@@ -25,75 +25,113 @@
  * -------------------------
  */
 body {
+    background-color: lightsteelblue;
     font-family: "Open Sans", Helvetica, Arial, sans-serif;
-    padding-top: 20px;
+    margin: 30px;
+    @include styleBorder(16px, solid, #EEE);
 }
-
-/**
- * -------------------------
- * Font
- * -------------------------
- */
-h1 {
-    @include fontProject(2em, bold, $darkColor);
+h1, h2 p, ul, li, p {
+    padding: 20px;
 }
 
 // Structure
 /**
  * -------------------------
- * Global
+ * Content with flexbox
  * -------------------------
  */
 #container {
-    @include styleBorder(1px, solid, $darkColor);
-    margin: 20px;
-    padding: 20px;
-}
-/**
- * -------------------------
- * Header
- * -------------------------
- */
-header {
-    
-}
-
-/**
- * -------------------------
- * Content
- * -------------------------
- */
-.exampleElementOfType {
-    #{elements-of-type(block)} {
-        border: 1px solid #777777;
-        margin: 1em 3em;
+    header, footer {
+        @include flex(1 0 100%);
     }
-    #{elements-of-type(inline)} {
-        color: #cc0000;
+    header {
+        background: lighten(blue, 40%);
+        h1 {
+            padding-top: 30px;
+        }
+        
+        nav {
+            $flex-legacy-enabled: true;
+            
+            ul {
+                padding: 0;
+                margin: -$spaceUlLi;
+                min-width: 100%; // fix for old firefox
+                text-align: center;
+                @include display-flex(flex);
+            }
+            
+            li {
+                background: grey;
+                margin: $spaceUlLi;
+                display: inline-block; // non-flexbox browsers
+                @include flex(1 1 30%);
+            }
+            
+            $flex-legacy-enabled: false;
+        }
+    }
+    
+    h1 {
+        @include fontProject(2em, bold, $darkColor);
+    }
+    
+    section {
+        @include display-flex;
+        @include flex-wrap(wrap);
+        @include flex(1 0 100%);
+    }
+    
+    h2 {
+        @include flex(1 1 100%);
+        @include fontProject(1.5em, normal, $darkColor);
+        background-color: lightblue;
+        padding: 30px;
+    }
+    
+    article {
+        @include flex(2 1 30em);
+        background-color: lavender;
+    }
+
+    aside {
+        @include flex(1 0 15em);
+        background: lighten(blue, 40%);
+    }
+    
+    #flexible {
+    padding: 0;
+    text-align: center;
+    @include display-flex;
+    @include flex-wrap(wrap);
+
+    li {
+        background: #CCC;
+        min-width: 12em;
+        margin: $spaceUlLi;
+        padding: $spaceUlLi;
+        display: inline-block; // non-flexbox browsers
+        @include flex(1 0);
+    }
+}
+
+    footer {
+        background-color: lightsalmon;
     }
 }
 
 /**
  * -------------------------
- * Footer
- * -------------------------
- */
-footer {
-    
-}
-
-/**
- * -------------------------
- * Some tests
+ * Specific content
  * -------------------------
  */
 // use the _base include 'compass/css3' - no need @mixin here - Compass advantage
 .testRadiusBox {
     @include border-radius(10px);
-    
 }
 
 .box1 {
-    border: 10px solid red;
-    @include square-box(250px);
+    @include styleBorder(10px, solid, $darkColor);
+    @include square-box(200px);
+    margin: 10%;
 }
