@@ -22,3 +22,8 @@
     height: $dim;
     width: $dim;
 }
+
+// Border
+@mixin styleBorder($size, $kind, $color) {
+    border: $size $kind $color;
+}
