@@ -6,4 +6,19 @@
 //
 // @author: Christophe Malo
 @import "compass/reset";
+@import "compass/css3";
+@import "compass/layout";
 @import "compass/utilities";
+
+// Mixin for fonts
+@mixin fontProject ($size, $weight, $color) {
+    font-size: $size;
+    font-weight: $weight;
+    color: $color;
+}
+
+// Box
+@mixin square-box($dim) {
+    height: $dim;
+    width: $dim;
+}
