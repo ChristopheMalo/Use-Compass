@@ -28,7 +28,7 @@ You need gpg2 to install RVM.
 - Need to reinstall Sass with new ruby (because conflicts between ruby system and ruby RVM): rvm use system - and - gem uninstall sass
 - Install fresh Sass: rvm use default (change to new ruby version) - and - gem install sass - and - sass -v (check version - no warning message)
 - Install Compass: gem install compass
-- Check the version: compass -v
+- Check the version: compass -v or compass version
 
 ## Memento RVM
 - Use the default system ruby: rvm use system
@@ -37,5 +37,9 @@ You need gpg2 to install RVM.
 - Install specific version: rvm install 2.0.0
 - Generate documentation: rvm docs generate-ri
 
-## Memento Compass
+## Memento Compass (use console)
 - Create the project: compass create [project_name]
+- Initialize the index.html file with links to compass (css) stylesheets folder
+- Start watch the project, in project root folder: compass watch
+- Compile css files to production: compass compile --production
+- Help: compass help and compass help <command>
