@@ -1,0 +1,137 @@
+/**
+ * Project: Use Compass and Sass
+ *
+ * Author: Christophe Malo
+ */
+/**
+ * -------------------------
+ * Import Google Font
+ * -------------------------
+ */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700);
+/**
+ * -------------------------
+ * Reset CSS
+ * -------------------------
+ */
+/* line 5, ../../../../../Users/cmalo/.rvm/gems/ruby-2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../Users/cmalo/.rvm/gems/ruby-2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../Users/cmalo/.rvm/gems/ruby-2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../Users/cmalo/.rvm/gems/ruby-2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../Users/cmalo/.rvm/gems/ruby-2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../Users/cmalo/.rvm/gems/ruby-2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../Users/cmalo/.rvm/gems/ruby-2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../Users/cmalo/.rvm/gems/ruby-2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../Users/cmalo/.rvm/gems/ruby-2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/**
+ * -------------------------
+ * Generique
+ * -------------------------
+ */
+/* line 27, ../sass/application.scss */
+body {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  padding-top: 20px;
+}
+
+/**
+ * -------------------------
+ * Font
+ * -------------------------
+ */
+/* line 37, ../sass/application.scss */
+h1 {
+  font-size: 2em;
+  font-weight: bold;
+  color: #000;
+}
+
+/**
+ * -------------------------
+ * Header
+ * -------------------------
+ */
+/**
+ * -------------------------
+ * Content
+ * -------------------------
+ */
+/**
+ * -------------------------
+ * Footer
+ * -------------------------
+ */
+/**
+ * -------------------------
+ * Some tests
+ * -------------------------
+ */
+/* line 66, ../sass/application.scss */
+.testRadiusBox {
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+/* line 71, ../sass/application.scss */
+.box1 {
+  border: 10px solid red;
+  height: 250px;
+  width: 250px;
+}
