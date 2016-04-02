@@ -24,8 +24,8 @@ You need gpg2 to install RVM.
 - Install RVM stable with Ruby (latest version): \curl -sSL https://get.rvm.io | bash -s stable --ruby
 - RVM download and build a ruby version
 - Restart the console
-- Check the ruby version: ruby -v
-- Need to resintall Sass with new ruby: rvm use system - and - gem uninstall sass
+- Check the ruby version: ruby -v and gem version: gem -v
+- Need to reinstall Sass with new ruby (because conflicts between ruby system and ruby RVM): rvm use system - and - gem uninstall sass
 - Install fresh Sass: rvm use default (change to new ruby version) - and - gem install sass - and - sass -v (check version - no warning message)
 - Install Compass: gem install compass
 - Check the version: compass -v
@@ -36,3 +36,6 @@ You need gpg2 to install RVM.
 - Use ruby version installed in machine: rvm use default or [version_number]
 - Install specific version: rvm install 2.0.0
 - Generate documentation: rvm docs generate-ri
+
+## Memento Compass
+- Create the project: compass create [project_name]
