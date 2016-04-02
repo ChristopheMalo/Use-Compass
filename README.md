@@ -45,5 +45,5 @@ You need gpg2 to install RVM.
 - Create the project: compass create [project_name]
 - Initialize the index.html file with links to compass (css) stylesheets folder
 - Start watch the project, in project root folder: compass watch
-- Compile css files to production: compass compile --production
+- Compile css files to production: compass compile path-to/file.scss --force
 - Help: compass help and compass help <command>
