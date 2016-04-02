@@ -2,6 +2,8 @@
 
 This project shows different tests with Compass.
 
+I use SASS and Flexbox.
+
 I'm working on MAC OS X Lion (10.7).
 
 This project needs to update ruby to 2.0 version or higher.
