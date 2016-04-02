@@ -111,6 +111,7 @@ h1 {
 #container {
   border: 1px solid #000;
   margin: 20px;
+  padding: 20px;
 }
 
 /**
@@ -123,34 +124,34 @@ h1 {
  * Content
  * -------------------------
  */
-/**
- * -------------------------
- * Footer
- * -------------------------
- */
-/* line 69, ../sass/application.scss */
+/* line 67, ../sass/application.scss */
 .exampleElementOfType address, .exampleElementOfType article, .exampleElementOfType aside, .exampleElementOfType blockquote, .exampleElementOfType center, .exampleElementOfType dir, .exampleElementOfType div, .exampleElementOfType dd, .exampleElementOfType details, .exampleElementOfType dl, .exampleElementOfType dt, .exampleElementOfType fieldset, .exampleElementOfType figcaption, .exampleElementOfType figure, .exampleElementOfType form, .exampleElementOfType footer, .exampleElementOfType frameset, .exampleElementOfType h1, .exampleElementOfType h2, .exampleElementOfType h3, .exampleElementOfType h4, .exampleElementOfType h5, .exampleElementOfType h6, .exampleElementOfType hr, .exampleElementOfType header, .exampleElementOfType hgroup, .exampleElementOfType isindex, .exampleElementOfType main, .exampleElementOfType menu, .exampleElementOfType nav, .exampleElementOfType noframes, .exampleElementOfType noscript, .exampleElementOfType ol, .exampleElementOfType p, .exampleElementOfType pre, .exampleElementOfType section, .exampleElementOfType summary, .exampleElementOfType ul {
   border: 1px solid #777777;
   margin: 1em 3em;
 }
-/* line 73, ../sass/application.scss */
+/* line 71, ../sass/application.scss */
 .exampleElementOfType a, .exampleElementOfType abbr, .exampleElementOfType acronym, .exampleElementOfType audio, .exampleElementOfType b, .exampleElementOfType basefont, .exampleElementOfType bdo, .exampleElementOfType big, .exampleElementOfType br, .exampleElementOfType canvas, .exampleElementOfType cite, .exampleElementOfType code, .exampleElementOfType command, .exampleElementOfType datalist, .exampleElementOfType dfn, .exampleElementOfType em, .exampleElementOfType embed, .exampleElementOfType font, .exampleElementOfType i, .exampleElementOfType img, .exampleElementOfType input, .exampleElementOfType keygen, .exampleElementOfType kbd, .exampleElementOfType label, .exampleElementOfType mark, .exampleElementOfType meter, .exampleElementOfType output, .exampleElementOfType progress, .exampleElementOfType q, .exampleElementOfType rp, .exampleElementOfType rt, .exampleElementOfType ruby, .exampleElementOfType s, .exampleElementOfType samp, .exampleElementOfType select, .exampleElementOfType small, .exampleElementOfType span, .exampleElementOfType strike, .exampleElementOfType strong, .exampleElementOfType sub, .exampleElementOfType sup, .exampleElementOfType textarea, .exampleElementOfType time, .exampleElementOfType tt, .exampleElementOfType u, .exampleElementOfType var, .exampleElementOfType video, .exampleElementOfType wbr {
   color: #cc0000;
 }
 
 /**
  * -------------------------
+ * Footer
+ * -------------------------
+ */
+/**
+ * -------------------------
  * Some tests
  * -------------------------
  */
-/* line 83, ../sass/application.scss */
+/* line 91, ../sass/application.scss */
 .testRadiusBox {
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
   border-radius: 10px;
 }
 
-/* line 88, ../sass/application.scss */
+/* line 96, ../sass/application.scss */
 .box1 {
   border: 10px solid red;
   height: 250px;

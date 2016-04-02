@@ -5,6 +5,9 @@
 // Define compass/framework constants
 //
 // @author: Christophe Malo
+// Variables - Declare variables before import
+$darkColor: #000;
+
 @import "compass/reset";
 @import "compass/css3";
 @import "compass/layout";
